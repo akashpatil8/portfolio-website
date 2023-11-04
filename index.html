@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akash's Portfolio</title>
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@400;700;900&display=swap" rel="stylesheet" />
+
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav>
+            <span> Portfolio </span>
+            <ul>
+                <li class="hideOnMobile">
+                    <a href="#home"> Home </a>
+                </li>
+                <li class="hideOnMobile">
+                    <a href="#about"> About </a>
+                </li>
+                <li class="hideOnMobile">
+                    <a href="#skills"> Skills </a>
+                </li>
+                <li class="hideOnMobile">
+                    <a href="#project"> Projects </a>
+                </li>
+                <li class="hideOnMobile">
+                    <a href="#contact"> Contact </a>
+                </li>
+                <li class="show-menu-btn" onclick="showSidebar()">
+                    <a href="#" aria-label="Open-btn">
+                        <i class="fa-solid fa-bars"> </i>
+                    </a>
+                </li>
+                <li class="close-menu-btn" onclick="closeSidebar()">
+                    <a href="#" aria-label="Close-btn">
+                        <i class="fa-solid fa-xmark"> </i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Data Section -->
+    <section id="home">
+        <div class="info-container">
+            <span> Hello, </span>
+            <span class="greeting">
+                I'am
+                <span class="name"> Akash</span>,
+            </span>
+            <span class="designation"> Web Developer </span>
+            <div class="btn">
+                <button class="contact-btn" type="button">Contact</button>
+                <button class="download-btn" type="button">Download CV</button>
+            </div>
+            <div class="data-social">
+                <a href="https://www.linkedin.com/in/akashpatil8/" aria-label="Linkedin">
+                    <i class="fa-brands fa-linkedin social-icons"> </i>
+                </a>
+                <a href="https://github.com/akashpatil8/" aria-label="Github">
+                    <i class="fa-brands fa-github social-icons"> </i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100003477346289" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook social-icons"> </i>
+                </a>
+                <a href="https://www.instagram.com/me.akashpatil/" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram social-icons"> </i>
+                </a>
+            </div>
+        </div>
+        <div class="profile-img">
+            <img src="./images/profile.png" alt="profile-img" />
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li onclick="closeSidebar()">
+                    <a href="#home"> Home </a>
+                </li>
+                <li onclick="closeSidebar()">
+                    <a href="#about"> About </a>
+                </li>
+                <li onclick="closeSidebar()">
+                    <a href="#skills"> Skills </a>
+                </li>
+                <li onclick="closeSidebar()">
+                    <a href="#project"> Projects </a>
+                </li>
+                <li onclick="closeSidebar()">
+                    <a href="#contact"> Contact </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="">
+        <h3>About</h3>
+        <div class="custom-ul"></div>
+        <h4 class="hidden-to-top">A brief introduction to my world!</h4>
+        <div class="about-info">
+            <div class="about-img-container hidden-to-right">
+                <img src="./images/about-img.jpeg" alt="about-img" />
+            </div>
+            <div class="about-description hidden-to-left">
+                <span> I'm Akash </span>
+                <p>
+                    With a robust background in data manipulation and management, I
+                    bring a wealth of analytical expertise to any team in need of
+                    data-driven solutions. My proficiency in tools such as SAP BODS,
+                    Excel, Sheets, and Power BI, coupled with my programming knowledge
+                    of SQL and Python, has honed my skills in data analysis,
+                    visualization, and warehousing. Furthermore, my comprehensive
+                    understanding of Software Development platforms such as HTML, CSS,
+                    JavaScript, and Flutter further strengthens my capabilities as an
+                    analytical professional.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="">
+        <h3>Skills</h3>
+        <div class="custom-ul"></div>
+        <h4 class="hidden-to-bottom">Skills that define my expertise and work</h4>
+        <div class="skill-container hidden-to-left">
+            <div class="slider">
+                <div class="skill-card">
+                    <div class="skill-details">
+                        <span class="skill-name"> HTML </span>
+                        <span class="skill-percentage"> 90% </span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="html-progress"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-details">
+                        <span class="skill-name"> CSS </span>
+                        <span class="skill-percentage"> 80% </span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="css-progress"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-details">
+                        <span class="skill-name"> JavaScript </span>
+                        <span class="skill-percentage"> 20% </span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="js-progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="skill-card">
+                    <div class="skill-details">
+                        <span class="skill-name"> React Js </span>
+                        <span class="skill-percentage"> 30% </span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="react-progress"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-details">
+                        <span class="skill-name"> Python </span>
+                        <span class="skill-percentage"> 60% </span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="python-progress"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-details">
+                        <span class="skill-name"> Java </span>
+                        <span class="skill-percentage"> 80% </span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="java-progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project Section -->
+    <section id="project">
+        <h3>Projects</h3>
+        <div class="custom-ul"></div>
+        <h4 class="hidden-to-top">
+            A showcase my creative skills and how I put them into practical world.
+        </h4>
+        <div class="project-container">
+            <div class="project-slides hidden-to-right">
+                <div class="project-card">
+                    <img src="./images/movieapp.png" alt="project-img1" class="project-img" />
+                    <div class="project-card-info">
+                        <span> MoviePedia </span>
+                        <p>
+                            This is a sleek UI-focused application built with Flutter SDK.
+                            It fetches movie data from TMDB API and offers multiple pages,
+                            search functionality, and both dark and light modes. Users can
+                            easily access movie details, including release date, rating,
+                            overview, and cast information.
+                        </p>
+                        <div class="project-tech-container">
+                            <img class="project-tech-icon" width="30" height="30" src="https://img.icons8.com/color/48/flutter.png" alt="flutter" />
+                            <img width="30" height="30" src="https://img.icons8.com/color/100/kotlin.png" alt="kotlin" />
+                            <img width="30" height="30" src="https://img.icons8.com/color/48/dart.png" alt="dart" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-slides hidden-to-right">
+                <div class="project-card">
+                    <img src="./images/movieapp.png" alt="project-img1" class="project-img" />
+                    <div class="project-card-info">
+                        <span> Portfolio Website </span>
+                        <p>
+                            Welcome to my Portfolio Website, a showcase of my skills and
+                            knowledge, thoughtfully organized into sections: Home, About,
+                            Skills, Projects, and Contacts. It seamlessly adapts to both
+                            desktop and mobile devices. Enjoy sleek animations that enhance
+                            the aesthetic appeal of the site.
+                        </p>
+                        <div class="project-tech-container">
+                            <img width="30" height="30" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1" />
+                            <img width="30" height="30" src="https://img.icons8.com/color/48/css3.png" alt="css3" />
+                            <img width="30" height="30" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-slides hidden-to-right">
+                <div class="project-card">
+                    <img src="./images/movieapp.png" alt="project-img1" class="project-img" />
+                    <div class="project-card-info">
+                        <span> E-commerce Website </span>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut
+                        </p>
+                        <div class="project-tech-container">
+                            <img width="30" height="30" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1" />
+                            <img width="30" height="30" src="https://img.icons8.com/color/48/css3.png" alt="css3" />
+                            <img width="30" height="30" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1" />
+                            <img width="30" height="30" src="https://img.icons8.com/officel/480/react.png" alt="react" />
+                            <img width="30" height="30" src="https://img.icons8.com/color/48/mysql-logo.png" alt="mysql-logo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="">
+        <h3>Contact me</h3>
+        <div class="custom-ul"></div>
+        <h4 class="hidden-to-bottom">
+            Whether it's about work or simply saying hello, feel free to reach out
+            to me anytime
+        </h4>
+        <div class="contact-container">
+            <div class="contact-info hidden-to-right">
+                <div class="contact-info-card">
+                    <i class="fa-solid fa-location-dot"> </i>
+                    <div>
+                        <span> Address </span>
+                        <p>Electronic City 1, Bangalore, Karnataka, 560100</p>
+                    </div>
+                </div>
+                <div class="contact-info-card">
+                    <i class="fa-solid fa-phone"> </i>
+                    <div>
+                        <span> Phone </span>
+                        <p>+91 8806666249</p>
+                    </div>
+                </div>
+                <div class="contact-info-card">
+                    <i class="fa-solid fa-envelope"> </i>
+                    <div>
+                        <span> Email </span>
+                        <p>akashpatil4659@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <form class="hidden-to-left">
+                <span> Send Message </span>
+                <div>
+                    <input type="text" placeholder="Name" />
+                </div>
+                <div>
+                    <input type="email" placeholder="Email" />
+                </div>
+                <div>
+                    <textarea name="description" id="" cols="30" rows="10" title="Description" placeholder="Description">
+            </textarea>
+                </div>
+                <div>
+                    <input class="input-button" type="submit" value="Submit now" />
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer id="footer">
+        <h2 class="footer-title">Akash</h2>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/akashpatil8/" aria-label="Linkedin">
+                <i class="fa-brands fa-linkedin footer-icons"> </i>
+            </a>
+            <a href="https://github.com/akashpatil8/" aria-label="Github">
+                <i class="fa-brands fa-github footer-icons"> </i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100003477346289" aria-label="Facebook">
+                <i class="fa-brands fa-facebook footer-icons"> </i>
+            </a>
+            <a href="https://www.instagram.com/me.akashpatil/" aria-label="Instagram">
+                <i class="fa-brands fa-instagram footer-icons"> </i>
+            </a>
+        </div>
+        <p>Bedimcode. All rights reserved</p>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
